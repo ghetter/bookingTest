@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Booking | Campus Selection</title>
+        
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">    
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__row">
+                        <div class="header__logo">
+                            <a href="https://tsu.ru" target="_blank"><img src="img/booking/logo.svg" alt=""></a>
+                        </div>
+                        <div class="header__timestamp timestamp">
+                            <div class="timestamp__time">
+                                <span id="current-time"></span>
+                            </div>
+                            <div class="timestamp__date">
+                                <span id="current-date"></span>
+                            </div>
+                        </div>
+                        <div class="header__welcome">
+                            Добро пожаловать, <span class="current-user">Кирилл Дробков</span>!
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="campuses">
+                <div class="container">
+                    <div class="campuses__title">Выберите корпус</div>
+                </div>
+                <div class="container">
+                    <div class="campuses__column campuses__list">
+                        <div class="campuses__item campus">
+                            <div class="campus__id">
+                                Корпус №2, ТГУ
+                            </div>
+                            <div class="campus__address">
+                                просп. Ленина, 36
+                            </div>
+                            <img src="img/booking/campus_select-arw.svg" alt="" class="campus__select">
+                        </div>
+                        <div class="campuses__item campus">
+                            <div class="campus__id">
+                                Корпус №17, ТГУ
+                            </div>
+                            <div class="campus__address">
+                                Ново-Соборная площадь, 1
+                            </div>
+                            <img src="img/booking/campus_select-arw.svg" alt="" class="campus__select">
+                        </div>
+                        <div class="campuses__item campus campus-disabled">
+                            <div class="campus__id">
+                                Корпус №15, ТГУ
+                            </div>
+                            <div class="campus__address">
+                                В разработке
+                            </div>
+                            
+                        </div>
+                        <div class="campuses__item campus campus-disabled">
+                            <div class="campus__id">
+                                Корпус №1, ТГУ
+                            </div>
+                            <div class="campus__address">
+                                В разработке
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campuses__column campus__detailed">
+                        <div class="campus__location" id="map" style="width: 100%; height: 242px;">
+                            
+                        </div>
+                        <div class="campus__id"></div>
+                        <div class="campus__information">
+                            <div class="campus__address">
+                                <p class="campus__information-heading">Адрес:</p>
+                                <span></span>
+                            </div>
+                            <div class="campus__schedule">
+                                <p class="campus__information-heading">Время работы:</p>
+                                <span></span>
+                            </div>
+                            <div class="campus__phone">
+                                <p class="campus__information-heading">Телефон:</p>
+                                <span></span>
+                            </div>
+                        </div>
+                        <a href="#" class="campus__booking">Забронировать</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
